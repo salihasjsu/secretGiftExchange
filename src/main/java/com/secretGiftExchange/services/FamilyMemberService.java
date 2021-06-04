@@ -23,4 +23,21 @@ public class FamilyMemberService {
 	public FamilyMember getFamilyMember(String id) {
 		return familyMemberRepo.findById(id).get();
 	}
+	
+	public void saveMember(FamilyMember member) {
+		familyMemberRepo.save(member);
+	}
+	
+	public void updateMember(FamilyMember member, String id) {
+		FamilyMember mem = familyMemberRepo.findById(id).get();
+		if(mem != null) {
+			mem.setName(member.getName());
+			familyMemberRepo.save(mem);
+		}
+	}
+	
+	public void deleteMember(String id) {
+		familyMemberRepo.deleteById(id);
+	}
+	
 }
