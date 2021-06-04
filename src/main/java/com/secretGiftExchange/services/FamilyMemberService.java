@@ -39,5 +39,8 @@ public class FamilyMemberService {
 	public void deleteMember(String id) {
 		familyMemberRepo.deleteById(id);
 	}
+	public String get() {
+		return"hello";
+	}
 	
 }

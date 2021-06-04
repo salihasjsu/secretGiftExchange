@@ -6,7 +6,10 @@ name VARCHAR(100) NOT NULL
 
 DROP TABLE IF EXISTS GIFT_EXCHANGE;  
 CREATE TABLE GIFT_EXCHANGE (  
-member_id VARCHAR(50) PRIMARY KEY,  
-recipient_member_id VARCHAR(100) NOT NULL  
+member_id VARCHAR(50) NOT NULL,  
+member_name VARCHAR(100) NOT NULL,
+recipient_member_id VARCHAR(100) NOT NULL,
+recipient_member_name VARCHAR(100) NOT NULL,
+year INT NOT NULL
 );
 

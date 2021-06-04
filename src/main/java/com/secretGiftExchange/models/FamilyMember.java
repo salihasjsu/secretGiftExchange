@@ -1,5 +1,6 @@
 package com.secretGiftExchange.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -8,7 +9,6 @@ import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
-@Table
 public class FamilyMember {
 	@Id
 	@GeneratedValue(generator = "uuid")
@@ -17,6 +17,10 @@ public class FamilyMember {
 	private String name;
 	public FamilyMember() {
 		
+	}
+	public FamilyMember(String is, String name) {
+	this.id= id;
+	this.name=name;
 	}
 	public String getId() {
 		return id;
