@@ -6,13 +6,13 @@ A person cannot give gift to themselves.
 A family member cannot be given a gift from the same number from than once every 3 years.
 
 
-# Rest 
-### Get all Family Members (/members)
-### Get a Family Member(/members/{id})
-### Add a Family Member (/members)
-### Delete a Family Member(/members/{id})
-### Update a Family Member(/members/{id})
-### Gift Exhcange(/gift_exchange)
+# Rest Services
+* Get all Family Members (/members)
+* Get a Family Member(/members/{id})
+* Add a Family Member (/members)
+* Delete a Family Member(/members/{id})
+* Update a Family Member(/members/{id})
+* Gift Exhcange(/gift_exchange)
 
 
 # Environment Setup
