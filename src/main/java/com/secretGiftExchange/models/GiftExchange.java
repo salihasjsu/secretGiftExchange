@@ -5,15 +5,19 @@ import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 
 
 @Entity
+@IdClass(GiftExchangeKey.class)
 public class GiftExchange {
 	@Id
 	@Column(name="member_id")
 	private String memberId;
+	@Id
 	@Column(name="recipient_member_id")
 	private String memberRecipientId;
+	@Id
 	@Column(name="year")
 	private int year;
 	@Column(name="member_name")
