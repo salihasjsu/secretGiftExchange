@@ -25,15 +25,15 @@ A family member cannot be given a gift from the same number from than once every
 
 
 # Implementation
-1.Springboot framework with H2 in-memory database for Secret Gift Exchange. I maintain the history of the family for 3 years in DB and after 3 years i clean the oldest history of the member. Checks are performed to not assing the same member as recipient. Also to check if the recipient has already been assigned in past 3 years.
-2.H2 database
-3.Exception Handling
-4.Mocikito Junit5 Test cases.
+* Springboot framework with H2 in-memory database for Secret Gift Exchange. I maintain the history of the family for 3 years in DB and after 3 years i clean the oldest history of the member. Checks are performed to not assing the same member as recipient. Also to check if the recipient has already been assigned in past 3 years.
+* H2 database
+* Exception Handling
+* Mocikito Junit5 Test cases.
 
 # Project Setup
-1. Controllers Layer - a layer to maintain buisness logic of an application.
-2. Service Layer - a layer to provide set of operations
-3. Model - contains pojos 
-4. Respoitory Layer - DAO objets to interact with the database.
-5. Exception layer - Custom class to throw exceptions.
+* Controllers Layer - a layer to maintain buisness logic of an application.
+* Service Layer - a layer to provide set of operations
+* Model - contains pojos 
+* Respoitory Layer - DAO objets to interact with the database.
+* Exception layer - Custom class to throw exceptions.
 
